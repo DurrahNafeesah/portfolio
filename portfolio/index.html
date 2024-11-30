@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Therapist Portfolio</title>
+  <link rel="stylesheet" href="Booking.module.css">
+</head>
+<body>
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <button class="back-button">← Back</button>
+      <section class="container1">
+        <section class="swetha_div">
+      <div class="profile">
+        <img src="images/profile.jpg" alt="Swetha Varma" class="profile-pic"><br>
+        <img src="images/share-880816_1280.png" alt="share" class="share" width=18px
+        height=20px ><h2 class="vector">Swetha Varma</h2></section>
+        <p>Consultant Clinical Psychologist</p>
+        <p>10+ Years of Experience</p>
+        <p><strong>₹ 1,200 / Session</strong></p>
+        <p>Block A2, Delhi</p>
+      </section>
+        <button class="book-button">Book Session</button>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="content">
+      <section class="main1">
+        <div class="about">
+          <h2>About Me</h2>
+          <div id="content-frame" class="content-frame">
+            <p class="content-text">
+              Hello, I'm Swetha, a licensed therapist dedicated to guiding individuals through life's challenges with empathy and expertise. With over 4 years of experience, I specialize in helping clients manage anxiety, depression, and relationship issues through personalized, evidence-based practices. 
+              <span class="hidden-text">My commitment to continuous learning keeps me updated with the latest therapeutic techniques, allowing me to provide the best possible care. Whether you seek stress management strategies or personal growth, I am here to empower you on your journey towards emotional well-being. I offer convenient online consultation bookings, making it easier for you to take the first step towards a healthier, happier life.</span>
+            </p>
+            <button class="toggle-btn">Read More</button>
+          </div>
+        </div>
+        
+
+      <section class="credentials">
+        <h2>Credentials</h2>
+        <ul>
+          <li>Ph.D. in Clinical Psychology - Harvard University</li>
+          <li>M.A. in Counseling - University of California, Berkeley</li>
+          <li>Licensed Professional Counselor (LPC) - State of DEF</li>
+          <li>Certified Cognitive Behavioral Therapist (CBT)</li>
+          <li>Member, American Psychological Association (APA)</li>
+          <li>10+ years of experience in individual and group therapy</li>
+        </ul>
+      </section>
+
+      <section class="availability">
+        <h2>Available On</h2>
+        <div class="options">
+          <div class="option">In-person</div>
+          <div class="option">Video / Voice Call</div>
+        </div>
+      </section>
+
+      <section class="therapy">
+        <h2>I Offer Therapy For</h2>
+        <div class="therapy-options">
+          <span>Stress Management</span>
+          <span>Relationship Skills</span>
+          <span>Anxiety Reduction</span>
+          <span>Depression Relief</span>
+          <span>Behavioral</span>
+          <span>Trauma Healing</span>
+        </div>
+      </section>
+    </section>
+      <section class="testimonials">
+        <h2>Client Testimonials</h2>
+        <div class="testimonial">
+          <p>"The guidance I received from Swetha transformed my life and made me more balanced."</p>
+          <p>- Anonymous</p>
+        </div>
+        <div class="testimonial">
+          <p>"They helped me out of a very tough phase with compassion and professionalism."</p>
+          <p>- Anonymous</p>
+        </div>
+      </section>
+    </main>
+  </div>
+  <script>
+//     const textShort = document.getElementById("read");
+//     const textFull = document.getElementById("text-full");
+//     const toggleBtn = document.getElementById("toggle-btn");
+
+//     toggleBtn.addEventListener("click", () => {
+//       if (textFull.style.display === "none") {
+//         textFull.style.display = "inline";
+//         dots.style.display = "none";
+//         toggleBtn.textContent = "Show less"; // Change button to Show less
+//       } else {
+//         textFull.style.display = "none";
+//         dots.style.display = "inline";
+//         toggleBtn.textContent = "Read more"; // Change button to Read more
+//       }
+//     });
+// //     const parentContainer = document.querySelector('.about');
+
+// // parentContainer.addEventListener('click', event=>{
+
+// // const current = event.target;
+
+// // const isReadMoreBtn = current.className.includes ('read-more-btn');
+
+// // if(!isReadMoreBtn) return;
+
+// // const currentText = event.target.parentNode.querySelector('. read_more');
+
+// // currentText.classList.toggle('read_more--show');
+
+// // current.textContent = current.textContent.includes ('Read More') ?
+
+// // "Read Less...": "Read More...";
+
+// // })
+  // const parentContainer = document.querySelector('.about');
+
+  // parentContainer.addEventListener('click', (event) => {
+  //   const current = event.target;
+
+  //   // Check if the clicked element is the "Read More/Show Less" button
+  //   const isReadMoreBtn = current.className.includes('read-more-btn');
+
+  //   if (!isReadMoreBtn) return; // Exit if it's not the button
+
+  //   // Find the text to toggle
+  //   const currentText = current.parentNode.querySelector('.read_more');
+
+  //   // Toggle the class to show or hide text
+  //   currentText.classList.toggle('read_more--show');
+
+  //   // Update button text
+  //   current.textContent = current.textContent.includes('Read More')
+  //     ? 'Read More'
+  //     : 'Show Less';
+  // });
+  document.addEventListener("DOMContentLoaded", () => {
+  const contentFrame = document.getElementById("content-frame");
+  const toggleBtn = contentFrame.querySelector(".toggle-btn");
+  const hiddenText = contentFrame.querySelector(".hidden-text");
+
+  toggleBtn.addEventListener("click", () => {
+    // Toggle expanded class
+    contentFrame.classList.toggle("expanded");
+
+    // Update button text
+    toggleBtn.textContent = contentFrame.classList.contains("expanded")
+      ? "Show Less"
+      : "Read More";
+  });
+});
+
+  </script>
+</body>
+</html>
